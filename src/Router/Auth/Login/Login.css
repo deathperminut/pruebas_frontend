@@ -1,0 +1,1897 @@
+.Body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color:    #21263c  ;
+}
+.formContainer{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form{
+    width: 86%;
+    max-width: 400px;
+    height: 550px;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color:  #141424;
+    box-shadow: 5px 5px 10px rgba(57, 56, 56, 0.2);
+}
+.iconContainer{
+    width: 70px;
+    height: 70px;
+    box-shadow: 5px 5px 10px rgba(111, 111, 111, 0.4);
+    background-color:  #c9ef19;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.textIcon{
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+    position: relative;
+    bottom: 4px;
+}
+.inputContainer{
+    width: 90%;
+    margin-top: 20px;
+}
+.TitleLogin{
+    margin-top: 40px;
+    max-width: 200px;
+    text-align: center;
+    color: white;
+    font-size:15px;
+    font-style: italic;
+    
+}
+
+.ButtonElement{
+    width: 130px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #c9ef19;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: 1s;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.ButtonText{
+    color: white;
+    font-style: italic;
+}
+.textLogin{
+
+}
+.ButtonElement:hover{
+    border: 2px solid #9cbc0e;
+    box-shadow: 5px 5px 10px rgba(113, 113, 113, 0.4);
+}
+.textLogin{
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.textLogin:hover{
+    color: #c9ef19;
+}
+
+
+
+
+/* FORMS */
+/* ---------------------------------------------------
+    FORMS LOGIN - REGISTER - FORGOT
+  ----------------------------------------------------- */
+
+  .form-control {
+    height: 50px !important;
+    font-size: 13px !important;
+    text-transform: uppercase;
+    background-color: transparent !important;
+    border-top: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-bottom: 1px solid var(--color-tertiary-purple-) !important;
+    color: var(--color-purple-) !important;
+    font-family: var(--font-family-regular-) !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+  }
+  
+  .form-control-plaintext {
+    height: 35px !important;
+    font-size: 16px !important;
+    background-color: transparent !important;
+    border-top: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-bottom: 1px solid var(--color-tertiary-purple-) !important;
+    color: var(--color-purple-) !important;
+    font-family: var(--font-family-regular-) !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+  }
+  
+  .form-control:focus,
+  .form-control-plaintext:focus {
+    border-top: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-bottom: 1px solid var(--color-tertiary-purple-) !important;
+    outline: none !important;
+    color: var(--color-purple-) !important;
+    font-family: var(--font-family-regular-) !important;
+  }
+  
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: inherit !important;
+    align-items: inherit !important;
+    width: 100%;
+  }
+  
+  .input-group-text {
+    width: 35px;
+    color: var(--color-secondary-black-);
+    background-color: transparent !important;
+    border: 1px solid var(--color-tertiary-purple-) !important;
+    border-top: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-radius: 0rem !important;
+  }
+  
+  .right-addon- input {
+    padding-right: 0px;
+  }
+  
+  .left-addon- input {
+    padding-left: 15px;
+  }
+  
+  .inner-addon- {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .inner-addon- .fa {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
+    color: var(--color-purple-);
+  }
+  
+  .right-addon- .fa {
+    right: 0px;
+    top: 10px;
+  }
+  
+  .left-addon- .fa {
+    left: 0px;
+    top: 10px;
+  }
+  
+  .left-addon- .fa.icon-Info {
+    left: inherit;
+  }
+  
+  .right-addon- .fa.icon-password {
+    left: 0px;
+    top: 10px;
+  }
+  
+  input.form-control:focus~.fa {
+    color: var(--color-purple-) !important;
+  }
+  
+  .form-floating>label {
+    color: var(--color-purple-);
+    left: 30px !important;
+    padding: 1.3rem 0.75rem !important;
+  }
+  
+  .form-floating>.form-control-plaintext~label,
+  .form-floating>.form-control:focus~label,
+  .form-floating>.form-control:not(:placeholder-shown)~label,
+  .form-floating>.form-select~label {
+    font-size: 14px !important;
+    color: red !important;
+    
+    opacity: 1 !important;
+    transform: scale(.85) translateY(-1.5rem) translateX(-2.3rem) !important;
+  }
+
+  .form-floating>.form-control-plaintext~label *,
+  .form-floating>.form-control:focus~label *,
+  .form-floating>.form-control:not(:placeholder-shown)~label *,
+  .form-floating>.form-select~label *{
+    font-size: 14px !important;
+    color: red !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    transform: scale(.85) translateY(-1.5rem) translateX(-2.3rem) !important;
+  }
+  
+  .form-floating>.form-control-plaintext:focus *,
+  .form-floating>.form-control-plaintext:not(:placeholder-shown) *,
+  .form-floating>.form-control:focus *,
+  .form-floating>.form-control:not(:placeholder-shown) * {
+    padding-top: 1.2rem !important;
+    padding-bottom: 0.3rem !important;
+    padding-left: 2.7rem;
+    background-color: transparent !important;
+  }
+
+  
+  textarea.form-control::-webkit-scrollbar-track {
+    box-shadow: var(--box-shadow-7-);
+    -webkit-box-shadow: var(--box-shadow-7-);
+    background-color: transparent;
+  }
+  
+  textarea.form-control::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+  }
+  
+  textarea.form-control::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+    border: 0px solid transparent;
+  }
+  
+  /* ---------------------------------------------------
+      FORMS FILE
+    ----------------------------------------------------- */
+  
+  .form-control-file- {
+    position: relative;
+    top: 5px;
+  }
+  
+  /* ---------------------------------------------------
+      FORMS INTERNAL
+    ----------------------------------------------------- */
+  
+  #internal-form .form-control {
+    height: 50px !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    border-bottom: 1px solid var(--color-black-) !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form .form-control-plaintext {
+    height: 35px !important;
+    font-size: 14px !important;
+    border-bottom: 1px solid var(--color-black-) !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form .form-control:focus,
+  #internal-form .form-control-plaintext {
+    border-bottom: 1px solid var(--color-black-) !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: inherit !important;
+    align-items: inherit !important;
+    width: 100%;
+  }
+  
+  #internal-form .input-group-text {
+    width: 35px;
+    color: var(--color-secondary-black-);
+    background-color: transparent !important;
+    border: 1px solid var(--color-black-) !important;
+    border-top: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-radius: 0rem !important;
+  }
+  
+  #internal-form .inner-addon- .fa {
+    width: 40px;
+    height: 40px;
+    color: var(--color-black-);
+  }
+  
+  #internal-form .left-addon- .fa {
+    left: 0px;
+    top: 10px;
+  }
+  
+  #internal-form input.form-control:focus~.fa {
+    color: var(--color-black-) !important;
+  }
+  
+  #internal-form .form-floating>label {
+    color: var(--color-quaternary-gray-);
+  }
+  
+  #internal-form .form-floating>.form-control-plaintext~label,
+  #internal-form .form-floating>.form-control:focus~label,
+  #internal-form .form-floating>.form-control:not(:placeholder-shown)~label,
+  #internal-form .form-floating>.form-select~label {
+    font-size: 14px !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form textarea.form-control {
+    height: auto !important;
+    min-height: 50px;
+    max-height: 400px;
+    font-size: 12px !important;
+    line-height: 1.25rem;
+    border-left: 1px solid var(--color-black-) !important;
+    border-right: 1px solid var(--color-black-) !important;
+    border-top: 1px solid var(--color-black-) !important;
+    border-bottom: 1px solid var(--color-black-) !important;
+    border-radius: 0.75rem !important;
+    -webkit-border-radius: 0.75rem !important;
+    -moz-border-radius: 0.75rem !important;
+    -khtml-border-radius: 0.75rem !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form textarea.form-control:focus {
+    border-bottom: 1px solid var(--color-black-) !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form textarea.form-control::placeholder {
+    color: var(--color-quaternary-gray-) !important;
+    font-size: 14px !important;
+    text-transform: initial !important;
+    line-height: 1.25rem;
+  }
+  
+  /* ---------------------------------------------------
+      FORMS INTERNAL SELECT WITH BACKGROUND
+    ----------------------------------------------------- */
+  
+  #internal-form-background .form-control {
+    height: 50px !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    border-bottom: 1px solid var(--color-black-) !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-background .form-control-plaintext {
+    height: 35px !important;
+    font-size: 14px !important;
+    border-bottom: 1px solid var(--color-black-) !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-background .form-control:focus,
+  #internal-form-background .form-control-plaintext {
+    border-bottom: 1px solid var(--color-black-) !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-background .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: inherit !important;
+    align-items: inherit !important;
+    width: 100%;
+  }
+  
+  #internal-form-background .input-group-text {
+    width: 35px;
+    color: var(--color-secondary-black-);
+    background-color: transparent !important;
+    border: 1px solid var(--color-black-) !important;
+    border-top: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-radius: 0rem !important;
+  }
+  
+  #internal-form-background .inner-addon- .fa {
+    width: 40px;
+    height: 45px;
+    color: var(--color-black-);
+  }
+  
+  #internal-form-background .left-addon- .fa {
+    left: 5px;
+    top: 0px;
+  }
+  
+  #internal-form-background input.form-control:focus~.fa {
+    color: var(--color-black-) !important;
+  }
+  
+  #internal-form-background .form-floating>label {
+    color: var(--color-quaternary-gray-);
+  }
+  
+  #internal-form-background .form-floating>.form-control-plaintext~label,
+  #internal-form-background .form-floating>.form-control:focus~label,
+  #internal-form-background .form-floating>.form-control:not(:placeholder-shown)~label,
+  #internal-form-background .form-floating>.form-select~label {
+    font-size: 14px !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-background textarea.form-control {
+    height: auto !important;
+    min-height: 50px;
+    max-height: 400px;
+    font-size: 12px !important;
+    line-height: 1.25rem;
+    border-left: 1px solid var(--color-black-) !important;
+    border-right: 1px solid var(--color-black-) !important;
+    border-top: 1px solid var(--color-black-) !important;
+    border-bottom: 1px solid var(--color-black-) !important;
+    border-radius: 0.75rem !important;
+    -webkit-border-radius: 0.75rem !important;
+    -moz-border-radius: 0.75rem !important;
+    -khtml-border-radius: 0.75rem !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-background textarea.form-control:focus {
+    border-bottom: 1px solid var(--color-black-) !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-background textarea.form-control::placeholder {
+    color: var(--color-quaternary-gray-) !important;
+    font-size: 14px !important;
+    text-transform: initial !important;
+    line-height: 1.25rem;
+  }
+  
+  /* ---------------------------------------------------
+      FORMS INTERNAL MODALS
+    ----------------------------------------------------- */
+  
+  #internal-form-modals .form-control {
+    height: 50px !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    border-bottom: 1px solid var(--color-black-) !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-modals .form-control-plaintext {
+    height: 35px !important;
+    font-size: 14px !important;
+    border-bottom: 1px solid var(--color-black-) !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-modals .form-control:focus,
+  #internal-form-modals .form-control-plaintext {
+    border-bottom: 1px solid var(--color-black-) !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-modals .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: inherit !important;
+    align-items: inherit !important;
+    width: 100%;
+  }
+  
+  #internal-form-modals .input-group-text {
+    width: 35px;
+    color: var(--color-secondary-black-);
+    background-color: transparent !important;
+    border: 1px solid var(--color-black-) !important;
+    border-top: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-radius: 0rem !important;
+  }
+  
+  #internal-form-modals .inner-addon- .fa {
+    width: 40px;
+    height: 40px;
+    color: var(--color-black-);
+  }
+  
+  #internal-form-modals .left-addon- .fa {
+    left: 0px;
+    top: 8px;
+  }
+  
+  #internal-form-modals input.form-control:focus~.fa {
+    color: var(--color-black-) !important;
+  }
+  
+  #internal-form-modals .form-floating>label {
+    color: var(--color-quaternary-gray-);
+  }
+  
+  #internal-form-modals .form-floating>.form-control-plaintext~label,
+  #internal-form-modals .form-floating>.form-control:focus~label,
+  #internal-form-modals .form-floating>.form-control:not(:placeholder-shown)~label,
+  #internal-form-modals .form-floating>.form-select~label {
+    font-size: 14px !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-modals textarea.form-control {
+    height: auto !important;
+    min-height: 50px;
+    max-height: 400px;
+    font-size: 12px !important;
+    line-height: 1.25rem;
+    background-color: var(--color-secondary-white-) !important;
+    border-left: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-top: 0px solid transparent !important;
+    border-bottom: 0px solid transparent !important;
+    border-radius: 0.75rem !important;
+    -webkit-border-radius: 0.75rem !important;
+    -moz-border-radius: 0.75rem !important;
+    -khtml-border-radius: 0.75rem !important;
+    color: var(--color-quaternary-gray-) !important;
+    resize: none;
+  }
+  
+  #internal-form-modals textarea.form-control:focus {
+    border-left: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-top: 0px solid transparent !important;
+    border-bottom: 0px solid transparent !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-modals textarea.form-control::placeholder {
+    color: var(--color-quaternary-gray-) !important;
+    font-size: 14px !important;
+    text-transform: initial !important;
+    line-height: 1.25rem;
+  }
+  
+  #internal-form-modals input.custom-style-date-picker- {
+    font-size: 14px !important;
+    line-height: 1.7;
+    background-color: transparent !important;
+    border: 0 !important;
+    padding-left: 0px !important;
+    color: var(--color-quaternary-gray-) !important;
+    font-family: var(--font-family-regular-) !important;
+  }
+  
+  #internal-form-modals .custom-style-date-picker-::placeholder {
+    font-size: 14px !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-modals .rmdp-range {
+    background-color: var(--color-purple-) !important;
+    box-shadow: var(--box-shadow-8-) !important;
+    color: var(--color-secondary-gray-) !important;
+  }
+  
+  /* ---------------------------------------------------
+      FORMS INTERNAL BORDER NONE
+    ----------------------------------------------------- */
+  
+  #internal-form-border-0- input.form-control,
+  #internal-form-border-0- input.form-control-plaintext {
+    width: 45px !important;
+    height: 25px !important;
+    min-height: auto !important;
+    font-size: 14px !important;
+    text-transform: uppercase;
+    text-align: center !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid var(--color-black-) !important;
+    color: var(--color-quaternary-gray-) !important;
+    font-family: var(--font-family-regular-) !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+  }
+  
+  #internal-form-border-0- input.input-large-.form-control,
+  #internal-form-border-0- input.input-large-.form-control-plaintext {
+    width: auto !important;
+    height: auto !important;
+    min-height: auto !important;
+    font-size: 14px !important;
+    text-transform: none !important;
+    text-align: start;
+  }
+  
+  #internal-form-border-0- input.input-large-::placeholder {
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form-border-0- input.form-control:focus,
+  #internal-form-border-0- input.form-control-plaintext:focus {
+    border-bottom: 1px solid var(--color-black-) !important;
+    outline: none !important;
+    color: var(--color-quaternary-gray-) !important;
+    font-family: var(--font-family-regular-) !important;
+  }
+  
+  /* ---------------------------------------------------
+      FORMS INTERNAL CALCULATIONS
+    ----------------------------------------------------- */
+  
+  #internal-form .form-control-plaintext {
+    border-bottom: 1px solid var(--color-black-) !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-form .form-control-plaintext::placeholder {
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  /* ---------------------------------------------------
+      FORMS INTERNAL DATE AND RANGE DATE
+    ----------------------------------------------------- */
+  
+  #internal-date- .form-floating {
+    position: relative;
+    top: -6px;
+  }
+  
+  #internal-date- .form-floating.update-date-historical- {
+    position: relative;
+    top: 0px !important;
+  }
+  
+  #internal-date- .form-control.date {
+    width: 130px !important;
+    height: 40px !important;
+    font-size: 14px !important;
+    border-bottom: 1px solid transparent !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-date- .form-control.rangedate,
+  #internal-date- .form-control.month,
+  #internal-date- .form-control.only-month {
+    width: auto !important;
+    height: 40px !important;
+    font-size: 14px !important;
+    border-bottom: 1px solid transparent !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-date- .form-control-plaintext {
+    height: 35px !important;
+    font-size: 14px !important;
+    border-bottom: 1px solid var(--color-black-) !important;
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -khtml-border-radius: 0rem !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-date- .form-control:focus,
+  #internal-date- .form-control-plaintext {
+    border-bottom: 1px solid var(--color-black-) !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-date- .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: inherit !important;
+    align-items: inherit !important;
+    width: 100%;
+  }
+  
+  #internal-date- .input-group-text {
+    width: 35px;
+    color: var(--color-secondary-black-);
+    background-color: transparent !important;
+    border: 1px solid var(--color-black-) !important;
+    border-top: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-radius: 0rem !important;
+  }
+  
+  #internal-date- .inner-addon- .fa {
+    width: 40px;
+    height: 40px;
+    color: var(--color-black-);
+  }
+  
+  #internal-date- .left-addon- .fa {
+    left: 0px;
+    top: -1px;
+  }
+  
+  #internal-date- input.form-control:focus~.fa {
+    color: var(--color-black-) !important;
+  }
+  
+  #internal-date- .form-floating>label {
+    color: var(--color-quaternary-gray-);
+  }
+  
+  #internal-date- .form-floating>.form-control-plaintext~label,
+  #internal-date- .form-floating>.form-control:focus~label,
+  #internal-date- .form-floating>.form-control:not(:placeholder-shown)~label,
+  #internal-date- .form-floating>.form-select~label {
+    font-size: 14px !important;
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-date- .form-floating>.form-control-plaintext~label,
+  #internal-date- .form-floating>.form-control:focus~label,
+  #internal-date- .form-floating>.form-control:not(:placeholder-shown)~label,
+  #internal-date- .form-floating>.form-select~label {
+    font-size: 14px !important;
+    color: var(--color-quaternary-gray-) !important;
+    opacity: 1 !important;
+    transform: scale(.85) translateY(-1.4rem) translateX(-2.3rem) !important;
+  }
+  
+  #internal-date- .form-floating>.form-control-plaintext:focus,
+  #internal-date- .form-floating>.form-control-plaintext:not(:placeholder-shown),
+  #internal-date- .form-floating>.form-control:focus,
+  #internal-date- .form-floating>.form-control:not(:placeholder-shown) {
+    padding-top: 0.625rem !important;
+    padding-bottom: 0.625rem !important;
+    padding-left: 2.5rem;
+  }
+  
+  #internal-date- .form-control.rangedate .custom-style-date-picker- {
+    width: 155px !important;
+  }
+  
+  #internal-date- .form-control.month .custom-style-date-picker- {
+    width: 84px !important;
+  }
+  
+  #internal-date- .form-control.only-month .custom-style-date-picker- {
+    width: 72px !important;
+  }
+  
+  #internal-date- input.custom-style-date-picker-::placeholder {
+    color: var(--color-quaternary-gray-) !important;
+  }
+  
+  #internal-date- .custom-style-date-picker- {
+    font-size: 13px !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    padding-left: 0px !important;
+    color: var(--color-quaternary-gray-) !important;
+    font-family: var(--font-family-regular-) !important;
+  }
+  
+  #internal-date- .custom-style-date-picker-::placeholder {
+    font-size: 13px !important;
+  }
+
+
+  /* ICONS*/
+
+
+/* ---------------------------------------------------
+    ICONS FORMS
+  ----------------------------------------------------- */
+
+  .icon-text:before {
+    content: "\e93f";
+    font-size: 17px;
+  }
+  
+  .icon-select:before {
+    content: "\e940";
+    font-size: 17px;
+  }
+  
+  .icon-eraser:before {
+    content: "\e9be";
+    font-size: 17px;
+  }
+  
+  .icon-eraser-signature:before {
+    content: "\e9be";
+    font-size: 14px;
+  }
+  
+  .icon-user:before {
+    content: "\e93c";
+    font-size: 17px;
+  }
+  
+  .icon-password:before {
+    content: "\e93b";
+    font-size: 17px;
+  }
+  
+  .icon-hide-password:before {
+    content: "\e900";
+    font-size: 12px;
+  }
+  
+  .icon-see-password:before {
+    content: "\e901";
+    font-size: 12px;
+  }
+  
+  .icon-see-medical-history:before {
+    content: "\e901";
+    font-size: 12px;
+  }
+  
+  .icon-email:before {
+    content: "\e943";
+    font-size: 14px;
+  }
+  
+  .icon-id-type:before {
+    content: "\e90b";
+    font-size: 18px;
+  }
+  
+  .icon-id-number:before {
+    content: "\e90c";
+    font-size: 18px;
+  }
+  
+  .icon-city:before {
+    content: "\e93d";
+    font-size: 17px;
+  }
+  
+  .icon-coverage:before {
+    content: "\e902";
+    font-size: 20px;
+  }
+  
+  .icon-department:before {
+    content: "\e903";
+    font-size: 18px;
+  }
+  
+  .icon-address:before {
+    content: "\e904";
+    font-size: 18px;
+  }
+  
+  .icon-date:before {
+    content: "\e942";
+    font-size: 15px;
+  }
+  
+  .icon-date-range:before {
+    content: "\e942";
+    font-size: 13px;
+  }
+  
+  .icon-phone:before {
+    content: "\e944";
+    font-size: 18px;
+  }
+  
+  .icon-photo:before {
+    content: "\e941";
+    color: #fff;
+  }
+  
+  .icon-verification-alert:before {
+    content: "\e93f";
+    color: #1671b7;
+  }
+  
+  .icon-password-alert:before {
+    content: "\e940";
+    color: #1671b7;
+  }
+  
+  .icon-Notifications:before {
+    content: "\e906";
+    color: var(--color-purple-);
+    font-size: 18px;
+  }
+  
+  .icon-regime:before {
+    content: "\e912";
+    font-size: 17px;
+  }
+  
+  .icon-patient-state:before {
+    content: "\e90d";
+    font-size: 15px;
+  }
+  
+  .icon-eps:before {
+    content: "\e90e";
+    font-size: 18px;
+  }
+  
+  .icon-entity:before {
+    content: "\e90f";
+    font-size: 17px;
+  }
+  
+  .icon-co-payment:before {
+    content: "\e910";
+    font-size: 17px;
+  }
+  
+  .icon-update-billing:before {
+    content: "\e910";
+    font-size: 14px;
+  }
+  
+  .icon-search:before {
+    content: "\e907";
+    font-size: 14px;
+  }
+  
+  .icon-age:before {
+    content: "\e919";
+    font-size: 17px;
+  }
+  
+  .icon-end-time:before {
+    content: "\e91a";
+    font-size: 17px;
+  }
+  
+  .icon-start-time:before {
+    content: "\e91e";
+    font-size: 17px;
+  }
+  
+  .icon-gender:before {
+    content: "\e91c";
+    font-size: 17px;
+  }
+  
+  .icon-occupancy:before {
+    content: "\e920";
+    font-size: 17px;
+  }
+  
+  .icon-relationship:before {
+    content: "\e921";
+  }
+  
+  .icon-residence:before {
+    content: "\e922";
+  }
+  
+  .icon-close:before {
+    content: "\e923";
+    font-size: 12px;
+  }
+  
+  .icon-neighborhood:before {
+    content: "\e924";
+    font-size: 17px;
+  }
+  
+  .icon-amount:before {
+    content: "\e925";
+    font-size: 17px;
+  }
+  
+  .icon-new:before {
+    content: "\e926";
+  }
+  
+  .icon-type-relationship:before {
+    content: "\e928";
+  }
+  
+  .icon-kg:before {
+    content: "\e929";
+  }
+  
+  .icon-cm:before {
+    content: "\e92b";
+  }
+  
+  .icon-nm:before {
+    content: "\e92c";
+    font-size: 17px;
+  }
+  
+  .icon-filters-select:before {
+    content: "\e92a";
+  }
+  
+  .icon-Info:before {
+    content: "\e92d";
+  }
+  
+  .icon-generate-report:before {
+    content: "\e92e";
+    font-size: 17px;
+  }
+  
+  .icon-explanatory-note:before {
+    content: "\e92f";
+    font-size: 17px;
+  }
+  
+  .icon-shelf-life:before {
+    content: "\e931";
+    font-size: 17px;
+  }
+  
+  .icon-brand:before {
+    content: "\e932";
+    font-size: 17px;
+  }
+  
+  .icon-classification:before {
+    content: "\e933";
+    font-size: 17px;
+  }
+  
+  .icon-registration:before {
+    content: "\e934";
+    font-size: 17px;
+  }
+  
+  .icon-presentation:before {
+    content: "\e935";
+    font-size: 17px;
+  }
+  
+  .icon-lot:before {
+    content: "\e936";
+    font-size: 17px;
+  }
+  
+  .icon-concentration:before {
+    content: "\e937";
+    font-size: 17px;
+  }
+  
+  .icon-pharmaceutical-formulation:before {
+    content: "\e938";
+    font-size: 17px;
+  }
+  
+  .icon-active-ingredient:before {
+    content: "\e939";
+    font-size: 17px;
+  }
+  
+  .icon-series:before {
+    content: "\e93a";
+    font-size: 17px;
+  }
+  
+  .icon-value:before {
+    content: "\e945";
+    font-size: 17px;
+  }
+  
+  .icon-unit:before {
+    content: "\e946";
+    font-size: 17px;
+  }
+  
+  .icon-type-product:before {
+    content: "\e947";
+    font-size: 17px;
+  }
+  
+  .icon-warehouse:before {
+    content: "\e948";
+    font-size: 17px;
+  }
+  
+  .icon-charge:before {
+    content: "\e930";
+    font-size: 17px;
+  }
+  
+  .icon-inventory-name:before {
+    content: "\e949";
+    font-size: 17px;
+  }
+  
+  .icon-type:before {
+    content: "\e96b";
+    font-size: 17px;
+  }
+  
+  .icon-cause:before {
+    content: "\e970";
+    font-size: 17px;
+  }
+  
+  .icon-serous:before {
+    content: "\e971";
+    font-size: 17px;
+  }
+  
+  .icon-serosanguinolent:before {
+    content: "\e972";
+    font-size: 17px;
+  }
+  
+  .icon-bloody:before {
+    content: "\e973";
+    font-size: 17px;
+  }
+  
+  .icon-purulent:before {
+    content: "\e974";
+    font-size: 17px;
+  }
+  
+  .icon-depth:before {
+    content: "\e975";
+    font-size: 17px;
+  }
+  
+  .icon-lesions:before {
+    content: "\e976";
+    font-size: 17px;
+  }
+  
+  .icon-Insumos:before {
+    content: "\e977";
+    font-size: 17px;
+  }
+  
+  .icon-healing:before {
+    content: "\e978";
+    font-size: 17px;
+  }
+  
+  .icon-borders:before {
+    content: "\e979";
+    font-size: 17px;
+  }
+  
+  .icon-affected-area:before {
+    content: "\e97a";
+    font-size: 17px;
+  }
+  
+  .icon-hour:before {
+    content: "\e96c";
+    font-size: 17px;
+  }
+  
+  .icon-civil:before {
+    content: "\e96d";
+    font-size: 17px;
+  }
+  
+  .icon-day:before {
+    content: "\e96e";
+    font-size: 17px;
+  }
+  
+  .icon-every:before {
+    content: "\e96f";
+    font-size: 17px;
+  }
+  
+  .icon-imaging:before {
+    content: "\e967";
+    font-size: 17px;
+  }
+  
+  .icon-supplies:before {
+    content: "\e968";
+    font-size: 17px;
+  }
+  
+  .icon-laboratory:before {
+    content: "\e969";
+    font-size: 17px;
+  }
+  
+  .icon-procedure:before {
+    content: "\e96a";
+    font-size: 17px;
+  }
+  
+  .icon-pharmaceutical-form:before {
+    content: "\e960";
+    font-size: 17px;
+  }
+  
+  .icon-diagnosis:before {
+    content: "\e962";
+    font-size: 17px;
+  }
+  
+  .icon-suggested-amount:before {
+    content: "\e963";
+    font-size: 17px;
+  }
+  
+  .icon-Concentracin:before {
+    content: "\e964";
+    font-size: 17px;
+  }
+  
+  .icon-each:before {
+    content: "\e965";
+    font-size: 17px;
+  }
+  
+  .icon-administration-medication:before {
+    content: "\e966";
+    font-size: 17px;
+  }
+  
+  .icon-Parentesco:before {
+    content: "\e961";
+    font-size: 17px;
+  }
+  
+  .icon-medication:before {
+    content: "\e95f";
+    font-size: 17px;
+  }
+  
+  .icon-specialty:before {
+    content: "\e95e";
+    font-size: 17px;
+  }
+  
+  .icon-description:before {
+    content: "\e95d";
+    font-size: 17px;
+  }
+  
+  .icon-external-cause:before {
+    content: "\e95a";
+    font-size: 17px;
+  }
+  
+  .icon-purpose-consultation:before {
+    content: "\e95b";
+    font-size: 17px;
+  }
+  
+  .icon-type-diagnosis:before {
+    content: "\e95c";
+    font-size: 17px;
+  }
+  
+  .icon-water:before {
+    content: "\e951";
+    font-size: 17px;
+  }
+  
+  .icon-food:before {
+    content: "\e952";
+    font-size: 17px;
+  }
+  
+  .icon-position:before {
+    content: "\e953";
+    font-size: 17px;
+  }
+  
+  .icon-hygiene:before {
+    content: "\e954";
+    font-size: 17px;
+  }
+  
+  .icon-light:before {
+    content: "\e955";
+    font-size: 17px;
+  }
+  
+  .icon-refrigerator:before {
+    content: "\e956";
+    font-size: 17px;
+  }
+  
+  .icon-risk:before {
+    content: "\e957";
+    font-size: 17px;
+  }
+  
+  .icon-sanitary:before {
+    content: "\e958";
+    font-size: 17px;
+  }
+  
+  .icon-area-coverage:before {
+    content: "\e959";
+    font-size: 17px;
+  }
+  
+  .icon-network:before {
+    content: "\e97b";
+    font-size: 17px;
+  }
+  
+  .icon-social-coverage:before {
+    content: "\e97c";
+    font-size: 17px;
+  }
+  
+  .icon-vital:before {
+    content: "\e97d";
+    font-size: 17px;
+  }
+  
+  .icon-scale:before {
+    content: "\e97e";
+    font-size: 17px;
+  }
+  
+  .icon-family-structure:before {
+    content: "\e97f";
+    font-size: 17px;
+  }
+  
+  .icon-schooling:before {
+    content: "\e980";
+    font-size: 17px;
+  }
+  
+  .icon-tenure:before {
+    content: "\e981";
+    font-size: 17px;
+  }
+  
+  .icon-people:before {
+    content: "\e982";
+    font-size: 17px;
+  }
+  
+  .icon-social:before {
+    content: "\e983";
+    font-size: 17px;
+  }
+  
+  .icon-economic:before {
+    content: "\e984";
+    font-size: 17px;
+  }
+  
+  .icon-family:before {
+    content: "\e985";
+    font-size: 17px;
+  }
+  
+  .icon-decisions:before {
+    content: "\e986";
+    font-size: 17px;
+  }
+  
+  .icon-emotional:before {
+    content: "\e987";
+    font-size: 17px;
+  }
+  
+  .icon-housing:before {
+    content: "\e988";
+    font-size: 17px;
+  }
+  
+  .icon-zone:before {
+    content: "\e989";
+    font-size: 17px;
+  }
+  
+  .icon-reason:before {
+    content: "\e98a";
+    font-size: 17px;
+  }
+  
+  .icon-oxygen:before {
+    content: "\e98b";
+    font-size: 17px;
+  }
+  
+  .icon-auscultation:before {
+    content: "\e98c";
+    font-size: 17px;
+  }
+  
+  .icon-cough:before {
+    content: "\e98d";
+    font-size: 17px;
+  }
+  
+  .icon-gait:before {
+    content: "\e98e";
+    font-size: 17px;
+  }
+  
+  .icon-inr:before {
+    content: "\e98f";
+    font-size: 17px;
+  }
+  
+  .icon-partial:before {
+    content: "\e990";
+    font-size: 17px;
+  }
+  
+  .icon-protombin:before {
+    content: "\e991";
+    font-size: 17px;
+  }
+  
+  .icon-external-diagnosis:before {
+    content: "\e992";
+    font-size: 17px;
+  }
+  
+  .icon-indications:before {
+    content: "\e993";
+    font-size: 17px;
+  }
+  
+  .icon-asepsis:before {
+    content: "\e994";
+    font-size: 17px;
+  }
+  
+  .icon-caliber:before {
+    content: "\e995";
+    font-size: 17px;
+  }
+  
+  .icon-equipment:before {
+    content: "\e996";
+    font-size: 17px;
+  }
+  
+  .icon-wound-healing:before {
+    content: "\e997";
+    font-size: 17px;
+  }
+  
+  .icon-insertion:before {
+    content: "\e998";
+    font-size: 17px;
+  }
+  
+  .icon-infection:before {
+    content: "\e999";
+    font-size: 17px;
+  }
+  
+  .icon-catheter:before {
+    content: "\e99a";
+    font-size: 17px;
+  }
+  
+  .icon-unit-cost:before {
+    content: "\e99b";
+    font-size: 17px;
+  }
+  
+  .icon-total:before {
+    content: "\e99c";
+    font-size: 17px;
+  }
+  
+  .icon-check-list:before {
+    content: "\e9bd";
+    font-size: 20px;
+    color: var(--color-secondary-gray-);
+  }
+  
+  /* ---------------------------------------------------
+      ICON CURRENT DATE DASHBOARD
+    ----------------------------------------------------- */
+  
+  .icon-current-date:before {
+    content: "\e908";
+    color: var(--color-secondary-purple-);
+    position: relative;
+    top: -1px;
+  }
+  
+  /* ---------------------------------------------------
+      ICONS BUTTONS
+    ----------------------------------------------------- */
+  
+  .icon-left-arrow:before {
+    content: "\e905";
+    font-size: 12px;
+    position: relative;
+    left: 1px;
+  }
+  
+  .icon-right-arrow:before {
+    content: "\e913";
+    color: var(--color-secondary-gray-);
+    font-size: 12px;
+    position: relative;
+    left: 1px;
+    top: -0.5px;
+  }
+  
+  .icon-left-arrow-calendar:before {
+    content: "\e905";
+    font-size: 10px;
+  }
+  
+  .icon-right-arrow-calendar:before {
+    content: "\e913";
+    font-size: 10px;
+  }
+  
+  .icon-add-customer:before {
+    content: "\e90a";
+    font-size: 15px;
+  }
+  
+  .icon-modify-coverage:before {
+    content: "\e902";
+    font-size: 18px;
+  }
+  
+  .icon-see-history:before {
+    content: "\e909";
+    font-size: 18px;
+  }
+  
+  .icon-see-calendar:before {
+    content: "\e908";
+    font-size: 14px;
+  }
+  
+  .icon-add:before {
+    content: "\e911";
+    font-size: 14px;
+  }
+  
+  .icon-add-files:before {
+    content: "\e911";
+    font-size: 24px;
+  }
+  
+  .icon-add-document:before {
+    content: "\e911";
+    font-size: 13px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .icon-attach:before {
+    content: "\e917";
+  }
+  
+  .icon-consent:before {
+    content: "\e918";
+  }
+  
+  .icon-generate-report:before {
+    content: "\e91b";
+  }
+  
+  .icon-save:before {
+    content: "\e91d";
+  }
+  
+  .icon-note:before {
+    content: "\e91f";
+  }
+  
+  .icon-check:before {
+    content: "\e915";
+    font-size: 14px;
+  }
+  
+  .icon-star:before {
+    content: "\e916";
+    color: var(--color-gray-);
+  }
+  
+  .icon-next:before {
+    content: "\e927";
+  }
+  
+  .icon-edit:before {
+    content: "\e94a";
+    font-size: 13px;
+  }
+  
+  .icon-folder-user:before {
+    content: "\e909";
+    font-size: 13px;
+  }
+  
+  .icon-edit-charge:before {
+    content: "\e94a";
+    font-size: 13px;
+    position: relative;
+    top: -1px;
+    left: 1px;
+  }
+  
+  .icon-delete-surveys:before {
+    content: "\e94b";
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .icon-add-user:before {
+    content: "\e9bb";
+  }
+  
+  .icon-delete:before {
+    content: "\e94b";
+  }
+  
+  .icon-delete-charge:before {
+    content: "\e94b";
+    font-size: 13px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .icon-remission:before {
+    content: "\e94c";
+  }
+  
+  .icon-search-see-:before {
+    content: "\e907";
+  }
+  
+  .icon-transfer:before {
+    content: "\e94d";
+  }
+  
+  .icon-generate:before {
+    content: "\e94e";
+  }
+  
+  .icon-end:before {
+    content: "\e94f";
+  }
+  
+  .icon-delivery:before {
+    content: "\e950";
+  }
+  
+  .icon-see:before {
+    content: "\e901";
+  }
+  
+  .icon-decreased:before {
+    content: "\e99d";
+    font-size: 17px;
+  }
+  
+  .icon-during:before {
+    content: "\e99e";
+    font-size: 17px;
+  }
+  
+  .icon-phonoaudiology:before {
+    content: "\e99f";
+    font-size: 17px;
+  }
+  
+  .icon-name:before {
+    content: "\e9a0";
+    font-size: 17px;
+  }
+  
+  .icon-data-value:before {
+    content: "\e9a1";
+    font-size: 17px;
+  }
+  
+  .icon-occupational-value:before {
+    content: "\e9a2";
+    font-size: 17px;
+  }
+  
+  .icon-list-options:before {
+    content: "\e9a3";
+    color: var(--color-quaternary-gray-);
+    font-size: 17px;
+  }
+  
+  .icon-delete-file:before {
+    content: "\e94b";
+    font-size: 12px;
+  }
+  
+  .icon-edit-file:before {
+    content: "\e9a5";
+    font-size: 12px;
+  }
+  
+  .icon-view-file:before {
+    content: "\e901";
+    font-size: 11px;
+  }
+  
+  .icon-form-contract:before {
+    content: "\e925";
+    font-size: 14px;
+  }
+  
+  .icon-remove-file:before {
+    content: "\e923";
+    color: var(--color-secondary-red-) !important;
+    font-size: 8px !important;
+    position: relative;
+    top: -2px;
+  }
+  
+  .icon-delete-document:before {
+    content: "\e923";
+    font-size: 8px !important;
+    position: relative;
+    top: -3px;
+  }
+  
+  .icon-upload-file:before {
+    content: "\e9a4";
+    color: var(--color-secondary-purple-);
+    font-size: 14px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .icon-cancel-appointment:before {
+    content: "\e9a6";
+    position: relative;
+    left: -1px;
+  }
+  
+  .icon-pharmacological-risk:before {
+    content: "\e9a7";
+  }
+  
+  .icon-cancel-service:before {
+    content: "\e923";
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .icon-chat:before {
+    content: "\e9a8";
+  }
+  
+  .icon-backward:before {
+    content: "\e9a9";
+  }
+  
+  .icon-first-page:before {
+    content: "\e9aa";
+  }
+  
+  .icon-download-pdf:before {
+    content: "\e9ab";
+  }
+  
+  .icon-forward:before {
+    content: "\e9ac";
+  }
+  
+  .icon-last-page:before {
+    content: "\e9ad";
+  }
+  
+  .icon-zoom-in:before {
+    content: "\e9ae";
+  }
+  
+  .icon-zoom-out:before {
+    content: "\e9af";
+  }
+  
+  .icon-assign-appointment:before {
+    content: "\e9b0";
+  }
+  
+  .icon-data-table:before {
+    content: "\e9b6";
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .icon-filters-graphic:before {
+    content: "\e92a";
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .icon-close-data-table:before {
+    content: "\e923";
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .icon-close-notification:before {
+    content: "\e923";
+    font-size: 10px;
+    position: relative;
+    top: -2px;
+  }
+  
+  .icon-committee:before {
+    content: "\e9b7";
+    font-size: 14.5px;
+  }
+  
+  .icon-document:before {
+    content: "\e9b9";
+  }

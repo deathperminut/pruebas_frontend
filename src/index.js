@@ -4,11 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Importar estilos CSS
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// Importar bootstrap.bundle (incluye Popper.js y jQuery)
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { HashRouter } from 'react-router-dom';
+import { ProviderContext } from './Context';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <HashRouter>
+    <ProviderContext>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </ProviderContext> 
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
